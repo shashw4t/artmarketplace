@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutoring_Service.ViewModels
+namespace Art_Marketplace.ViewModels
 {
     public class ContactViewModel
     {
