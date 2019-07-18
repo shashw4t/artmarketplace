@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tutoring_Service.ViewModels;
+using Art_Marketplace.ViewModels;
 
-namespace Tutoring_Service.Controllers
+namespace Art_Marketplace.Controllers
 {
     public class AppController : Controller
     {

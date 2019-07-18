@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <RootNamespace>Tutoring_Service</RootNamespace>
+    <RootNamespace>Art_Marketplace</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
