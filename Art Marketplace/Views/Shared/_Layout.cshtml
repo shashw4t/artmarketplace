@@ -26,5 +26,8 @@
 
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/js/index.js"></script>
+
+    @RenderSection("scripts", false) 
+    <!-- allows you to selectively load scripts based if the view has the scripts section -->
 </body>
 </html>

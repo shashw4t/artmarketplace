@@ -26,7 +26,15 @@ namespace Art_Marketplace.Controllers
         [HttpPost("contact")]
         public IActionResult Contact(ContactViewModel model)
         {
-           
+            if (ModelState.IsValid)
+            {
+                //send email
+               
+            }
+            else
+            {
+                //throw errors
+            }
             return View();
         }
 
