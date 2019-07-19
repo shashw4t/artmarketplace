@@ -5,11 +5,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Art_Marketplace.ViewModels;
+using Art_Marketplace.Services;
 
 namespace Art_Marketplace.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService mailService;
+
+        public AppController(IMailService mailService)
+        {
+            this.mailService = mailService;
+        }
+
         public IActionResult Index()
         {
             
@@ -29,7 +37,10 @@ namespace Art_Marketplace.Controllers
             if (ModelState.IsValid)
             {
                 //send email
-               
+                mailService.SendMessage("dummyemail@email.com", model.Subject, $"From: {model.Email}, Message: {model.Message}");
+                ViewBag.UserMessage = "Mail sent";
+                ModelState.Clear(); 
+                //emptys contact form
             }
             else
             {
